@@ -1,3 +1,9 @@
 ﻿  main.cpp
-  AStarAmbush.vcxproj -> C:\Users\gameuser\Desktop\College Work\Games Eng\AStarAmbush\Debug\AStarAmbush.exe
-  AStarAmbush.vcxproj -> C:\Users\gameuser\Desktop\College Work\Games Eng\AStarAmbush\Debug\AStarAmbush.pdb (Partial PDB)
+  InputManager.cpp
+c:\users\gameuser\documents\ambushgit\astarambush\astarambush\inputmanager.cpp(437): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\gameuser\documents\ambushgit\astarambush\astarambush\inputmanager.cpp(444): warning C4305: 'argument': truncation from 'double' to 'float'
+  GameTime.cpp
+  Game.cpp
+  Generating Code...
+  AStarAmbush.vcxproj -> C:\Users\gameuser\Documents\AmbushGit\AStarAmbush\AStarAmbush\Debug\AStarAmbush.exe
+  AStarAmbush.vcxproj -> C:\Users\gameuser\Documents\AmbushGit\AStarAmbush\AStarAmbush\Debug\AStarAmbush.pdb (Partial PDB)
