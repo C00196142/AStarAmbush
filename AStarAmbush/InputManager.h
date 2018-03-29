@@ -39,7 +39,5 @@ private:
 	SDL_Point m_Rightdirection;
 	SDL_Point m_Leftdirection;
 
-
-
 };
 #endif
