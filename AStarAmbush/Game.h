@@ -4,6 +4,7 @@
 #include "GameTime.h"
 #include <Windows.h>
 #include <iostream>
+#include "Map.h"
 
 const float GameTick = 0.2f;
 
@@ -22,6 +23,7 @@ private:
 
 	EventListener * eventListener;
 	InputHandler * input;
+	Map * map;
 
 	float lastUpdate = 0.0f;
 	float currentUpdate = 0.0f;

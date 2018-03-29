@@ -19,6 +19,8 @@ Game::Game()
 	eventListener = new EventListener();
 	input = new InputHandler(&m_event, eventListener);
 
+	map = new Map();
+	map->init();
 }
 
 
