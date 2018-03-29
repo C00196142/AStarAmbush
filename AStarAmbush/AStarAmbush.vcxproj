@@ -125,12 +125,14 @@
     <ClCompile Include="GameTime.cpp" />
     <ClCompile Include="InputManager.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Map.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="EventListener.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="GameTime.h" />
     <ClInclude Include="InputManager.h" />
+    <ClInclude Include="Map.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
