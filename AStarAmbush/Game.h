@@ -5,6 +5,7 @@
 #include <Windows.h>
 #include <iostream>
 #include "Map.h"
+#include "TextureLoader.h"
 
 const float GameTick = 0.2f;
 
@@ -23,6 +24,7 @@ private:
 
 	EventListener * eventListener;
 	InputHandler * input;
+	TextureLoader* texture;
 	Map * map;
 
 	float lastUpdate = 0.0f;

@@ -6,6 +6,12 @@ Game::Game()
 	{
 		exit(0);
 	}
+	if (IMG_Init(IMG_INIT_JPG | IMG_INIT_PNG) < 0)
+	{
+		printf("SDL_Image could not initialize! SDL_image Error: %s\n", IMG_GetError());
+		exit(0);
+	}
+
 	
 	window = SDL_CreateWindow("AStarAmbush", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 1080, 720, SDL_WINDOW_SHOWN);
 
@@ -18,9 +24,10 @@ Game::Game()
 
 	eventListener = new EventListener();
 	input = new InputHandler(&m_event, eventListener);
+	texture = TextureLoader::Instance();
 
 	map = new Map();
-	map->init();
+	map->init(texture, gameRenderer);
 }
 
 
@@ -42,6 +49,8 @@ void Game::Run()
 
 		SDL_SetRenderDrawColor(gameRenderer, 0, 0, 0, 255);
 		SDL_RenderClear(gameRenderer);
+
+		map->Renderer(gameRenderer);
 
 		SDL_RenderPresent(gameRenderer);
 	}

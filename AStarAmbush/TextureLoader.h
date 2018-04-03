@@ -22,7 +22,6 @@ private:
 
 public:
 	void addTexture(string Tag, char * Path, SDL_Renderer * Renderer);
-
 	SDL_Texture * getTexture(string Tag);
 
 	static TextureLoader * Instance()
